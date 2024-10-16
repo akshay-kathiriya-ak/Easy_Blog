@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ReadMoreActivity">
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:alpha="0.1"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/background" />
+
+    <ImageButton
+        android:id="@+id/backbutton"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="38dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/title_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="TextView"
+        android:textSize="20sp"
+        android:textColor="@color/blue"
+        android:fontFamily="@font/montserrat_semibold"
+        app:layout_constraintStart_toStartOf="@+id/backbutton"
+        app:layout_constraintTop_toBottomOf="@+id/backbutton" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView4"
+        android:layout_width="34dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="20dp"
+        app:cardCornerRadius="100dp"
+        app:layout_constraintStart_toStartOf="@+id/title_text"
+        app:layout_constraintTop_toBottomOf="@+id/title_text">
+
+        <ImageView
+            android:id="@+id/profileImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/cropped_image" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/userName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="TextView"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:fontFamily="@font/montserrat_light"
+        app:layout_constraintBottom_toBottomOf="@+id/cardView4"
+        app:layout_constraintStart_toEndOf="@+id/cardView4"
+        app:layout_constraintTop_toTopOf="@+id/cardView4" />
+
+    <TextView
+        android:id="@+id/date_show"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:text="TextView"
+        android:fontFamily="@font/montserrat_italic"
+        android:textColor="#c8c8c8"
+        android:textSize="12sp"
+
+        app:layout_constraintBottom_toBottomOf="@+id/userName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/userName" />
+
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/date_show"
+        app:layout_constraintStart_toStartOf="@+id/cardView4"
+        app:layout_constraintTop_toBottomOf="@+id/cardView4" />
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        android:padding="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/divider2"
+        app:layout_constraintStart_toStartOf="@+id/divider2"
+        app:layout_constraintTop_toBottomOf="@+id/divider2">
+
+        <TextView
+            android:id="@+id/blogDescView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:fontFamily="@font/montserrat_light"
+            android:textSize="22sp"
+            android:padding="5dp"
+            android:text="TextView"
+            android:textColor="@color/black" />
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

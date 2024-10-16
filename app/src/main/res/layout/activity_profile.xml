@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4e4e4e"
+    tools:context=".ProfileActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView5"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="50dp"
+        app:cardCornerRadius="400dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/userProfile"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/cropped_image" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/userProfileName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/montserrat_semibold"
+        android:text="TextView"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/cardView5"
+        app:layout_constraintStart_toStartOf="@+id/cardView5"
+        app:layout_constraintTop_toBottomOf="@+id/cardView5" />
+
+    <View
+        android:id="@+id/divider3"
+        android:layout_width="235dp"
+        android:layout_height="2dp"
+        android:layout_marginTop="5dp"
+        android:background="#c8c8c8"
+        app:layout_constraintEnd_toEndOf="@+id/userProfileName"
+        app:layout_constraintStart_toStartOf="@+id/userProfileName"
+        app:layout_constraintTop_toBottomOf="@+id/userProfileName" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/addNewArticleButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="@android:color/transparent"
+        android:drawableStart="@drawable/add"
+        android:drawablePadding="28dp"
+        android:fontFamily="@font/montserrat_semibold"
+        android:text="Add New Article"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/divider3"
+        app:layout_constraintStart_toStartOf="@+id/divider3"
+        app:layout_constraintTop_toBottomOf="@+id/divider3"
+        app:srcCompat="@drawable/add" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/yourBlog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="41dp"
+        android:background="@android:color/transparent"
+        android:drawableStart="@drawable/read"
+        android:drawablePadding="28dp"
+        android:fontFamily="@font/montserrat_semibold"
+        android:text="Your Blog"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/addNewArticleButton"
+        app:layout_constraintStart_toStartOf="@+id/addNewArticleButton"
+        app:layout_constraintTop_toBottomOf="@+id/addNewArticleButton" />
+
+    <androidx.appcompat.widget.AppCompatButton
+       android:id="@+id/logOutButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="41dp"
+        android:background="@android:color/transparent"
+        android:drawableStart="@drawable/logout"
+        android:drawablePadding="28dp"
+        android:fontFamily="@font/montserrat_semibold"
+        android:text="Log Out"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/yourBlog"
+        app:layout_constraintStart_toStartOf="@+id/yourBlog"
+        app:layout_constraintTop_toBottomOf="@+id/yourBlog"
+      />
+</androidx.constraintlayout.widget.ConstraintLayout>

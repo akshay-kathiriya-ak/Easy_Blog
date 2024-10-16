@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "59332452067",
+    "project_id": "easy-blog-72460",
+    "storage_bucket": "easy-blog-72460.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:59332452067:android:97bc3c0774a81ec1566fd6",
+        "android_client_info": {
+          "package_name": "com.example.easyblog"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCX0hYihB8Y8ZA389_kbVuCXaMKihWxieg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
